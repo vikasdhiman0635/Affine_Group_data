@@ -1,0 +1,14 @@
+.change a
+{
+    color: white;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    text-decoration:none;
+}
+.fa
+{
+    width: 20px;
+    border-radius: 50%;
+    border-color: 2px solid black;
+}

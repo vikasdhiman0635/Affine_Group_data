@@ -1,0 +1,137 @@
+<form [formGroup]="contectform">
+<div class="container" style="font-size: 16px; background-color: white; padding-left: 30px; padding-right: 30px;">
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <img src="../../assets/images/prime-trust-apis-highly-scalable.png" class="logococ"/>
+        </div>
+        <div class="row">
+            <!-- <div class="col-md-12 text-center" style="color: black;">
+                <h3>Or fill out our contact form below</h3>
+            </div> -->
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="row">
+        <div class="col-md-6 col-sm-12">
+            <br>
+            <br>
+            <div class="row" style="color: black;">
+                <div class="col-md-6" style="margin-bottom: 30px;">
+                    <input type="text" formControlName="name" class="email" placeholder="Full Name">
+                </div>
+                <div class="col-md-6" style="margin-bottom: 30px;">
+                    <input type="text" class="email" placeholder="Email" formControlName="email">
+                </div>
+                <div class="col-md-6" style="margin-bottom: 30px;">
+                    <input type="text" class="email" placeholder="Phone No." formControlName="phone">
+                </div>
+                <div class="col-md-6" style="margin-bottom: 30px;">
+                    <input type="text" class="email" placeholder="Company Name" formControlName="companyname">
+                </div>
+                <div class="col-md-12" style="margin-bottom: 30px;">
+                    <input type="text" class="email" placeholder="How did you hear about us?" formControlName="abutus">
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-sm-12" style="color: black;">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="text-center">
+                        <h2 style="color: #2196fc;">Interested Services</h2>
+                        <br>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div style="margin-bottom: 10px;">
+                        <label class="checkboxcontainer">
+                            <input type="checkbox" formControlName="primePay" id="PrimePay" value="PrimePay">
+                            <span class="checkmark">
+                            </span>
+                        </label>
+                        <label for="PrimePay" class="lab">PrimePay</label>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div style="margin-bottom: 10px;">
+                        <label class="checkboxcontainer">
+                            <input type="checkbox" formControlName="digitalassetsolutions" id="Digital_Asset_Solutions" value="Digital Asset Solutions">
+                            <span class="checkmark">
+                            </span>
+                        </label>
+                        <label for="Digital_Asset_Solutions" class="lab">Digital Asset Solutions</label>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div style="margin-bottom: 10px;">
+                        <label class="checkboxcontainer">
+                            <input type="checkbox" formControlName="custodialservices" id="Custodial_Services" value="Custodial Services">
+                            <span class="checkmark">
+                            </span>
+                        </label>
+                        <label for="Custodial_Services" class="lab">Custodial Services</label>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div style="margin-bottom: 10px;">
+                        <label class="checkboxcontainer">
+                            <input type="checkbox" formControlName="assetprotectontrusts" id="Asset_Protecton_Trusts" value="Asset Protecton Trusts">
+                            <span class="checkmark">
+                            </span>
+                        </label>
+                        <label for="Asset_Protecton_Trusts" class="lab">Asset Protecton Trusts</label>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div style="margin-bottom: 10px;">
+                        <label class="checkboxcontainer">
+                            <input type="checkbox" formControlName="escrowservices" id="Escrow_Services" value="Escrow Services">
+                            <span class="checkmark">
+                            </span>
+                        </label>
+                        <label for="Escrow_Services" class="lab">Escrow Services</label>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div style="margin-bottom: 10px;">
+                        <label class="checkboxcontainer">
+                            <input type="checkbox" formControlName="complianceservices" id="Compliance_Services" value="Compliance Services">
+                            <span class="checkmark">
+                            </span>
+                        </label>
+                        <label for="Compliance_Services" class="lab">Compliance Services</label>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div style="margin-bottom: 10px;">
+                        <label class="checkboxcontainer">
+                            <input type="checkbox" formControlName="other" id="Other" value="Other">
+                            <span class="checkmark">
+                            </span>
+                        </label>
+                        <label for="Other" class="lab">Other</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <br>
+            <br>
+            <div class="row" style="color: black;">
+                <div class="col-md-2"></div>
+                <div class="col-md-8" style="margin-bottom: 30px;">
+                    <textarea type="text" class="email" formControlName="message" placeholder="Write a message"></textarea>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <input type="submit" (click)="savedata(contectform.value)" class="btne" value="Submit">
+        </div>
+    </div>
+    <br>
+    <br>
+</div>
+</form>
