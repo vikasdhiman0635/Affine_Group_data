@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
+import { ContectCurdComponent } from './contect-curd/contect-curd.component';
+import { UpdateDataComponent } from './contect-curd/update-data/update-data.component';
 
 
 const routes: Routes = [
@@ -9,6 +11,12 @@ const routes: Routes = [
   },
   {
     path:'Home', component:HomeComponent
+  },
+  {
+    path:'curd',component:ContectCurdComponent
+  },
+  {
+    path:'updatedata',component:UpdateDataComponent
   }
 ];
 
