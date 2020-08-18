@@ -1,0 +1,142 @@
+<br><br>
+<form #contectformForm="ngForm" [formGroup]="contectform">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h2>Update User Contact Data</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="">Name :-</label>
+                    <input type="text" class="form-control" formControlName="name" placeholder="Your Name {{data.name}}">
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="">Email :-</label>
+                    <input type="text" class="form-control" formControlName="email" placeholder="Your email {{data.email}}">
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="">Phone no. :-</label>
+                    <input type="text" class="form-control" formControlName="phone" placeholder="Your phone no. {{data.phone}}">
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="">Company Name :-</label>
+                    <input type="text" class="form-control" formControlName="companyname" placeholder="Your comapny name {{data.companyname}}">
+                </div>
+            </div>
+
+            <div class="col-md-8">
+                <div class="form-group">
+                    <label for="">About us :-</label>
+                    <input type="text" class="form-control" formControlName="abutus" placeholder="Your about us {{data.abutus}}">
+                </div>
+            </div>
+
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label for="">Message :-</label>
+                    <!-- <input type=""> -->
+                    <textarea class="form-control" formControlName="message" placeholder="Your message {{data.message}}"></textarea>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <br>
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="text-center">
+                    Interested Services
+                </h2>
+            </div>
+            <br>
+            <br>
+            <div class="row">
+                <div class="col-md-6">
+                    <div style="margin-bottom: 10px;">
+                        <label class="checkboxcontainer">
+                            <input type="checkbox" formControlName="primePay" id="PrimePay" value="PrimePay">
+                            <span class="checkmark">
+                            </span>
+                        </label>
+                        <label for="PrimePay" class="lab">PrimePay</label>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div style="margin-bottom: 10px;">
+                        <label class="checkboxcontainer">
+                            <input type="checkbox" formControlName="digitalassetsolutions" id="Digital_Asset_Solutions" value="Digital Asset Solutions">
+                            <span class="checkmark">
+                            </span>
+                        </label>
+                        <label for="Digital_Asset_Solutions" class="lab">Digital Asset Solutions</label>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div style="margin-bottom: 10px;">
+                        <label class="checkboxcontainer">
+                            <input type="checkbox" formControlName="custodialservices" id="Custodial_Services" value="Custodial Services">
+                            <span class="checkmark">
+                            </span>
+                        </label>
+                        <label for="Custodial_Services" class="lab">Custodial Services</label>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div style="margin-bottom: 10px;">
+                        <label class="checkboxcontainer">
+                            <input type="checkbox" formControlName="assetprotectontrusts" id="Asset_Protecton_Trusts" value="Asset Protecton Trusts">
+                            <span class="checkmark">
+                            </span>
+                        </label>
+                        <label for="Asset_Protecton_Trusts" class="lab">Asset Protecton Trusts</label>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div style="margin-bottom: 10px;">
+                        <label class="checkboxcontainer">
+                            <input type="checkbox" formControlName="escrowservices" id="Escrow_Services" value="Escrow Services">
+                            <span class="checkmark">
+                            </span>
+                        </label>
+                        <label for="Escrow_Services" class="lab">Escrow Services</label>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div style="margin-bottom: 10px;">
+                        <label class="checkboxcontainer">
+                            <input type="checkbox" formControlName="complianceservices" id="Compliance_Services" value="Compliance Services">
+                            <span class="checkmark">
+                            </span>
+                        </label>
+                        <label for="Compliance_Services" class="lab">Compliance Services</label>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div style="margin-bottom: 10px;">
+                        <label class="checkboxcontainer">
+                            <input type="checkbox" formControlName="other" id="Other" value="Other">
+                            <span class="checkmark">
+                            </span>
+                        </label>
+                        <label for="Other" class="lab">Other</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <input type="submit" value="Update" (click)="update()" class="btn btn-primary float-right"/>
+            </div>
+        </div>
+    </div>    
+</form>

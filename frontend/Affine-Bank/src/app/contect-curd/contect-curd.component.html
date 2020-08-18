@@ -1,0 +1,91 @@
+<br>
+<br>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <h2>
+                All Contect
+            </h2>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="row" *ngFor="let data of alldata">
+        <div class="col-md-12">
+            <div class="row">
+                <div class="col-md-4">
+                    <label for="">Name :- {{data.name}}</label>
+                </div>
+                <div class="col-md-4">
+                    <label for="">Email id :- {{data.email}}</label>
+                </div>
+                <div class="col-md-4">
+                    <label for="">Phone no :- {{data.phone}}</label>
+                </div>
+                <div class="col-md-4">
+                    <label for="">Company Name :- {{data.companyname}}</label>
+                </div>
+                <div class="col-md-4">
+                    <label for="">About us :- {{data.abutus}}</label>
+                </div>
+                <div class="col-md-4">
+                    <label for="">Message :- {{data.message}}</label>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="row">
+                <div class="col-md-6">
+                    <h2 class="text-center">
+                        Interested Services
+                    </h2>
+                    <br>
+                    <div class="row" *ngIf="data.primePay==true">
+                        <div class="col-md-12">
+                            <p>Prime Pay</p>
+                        </div>
+                    </div>
+                    <div class="row" *ngIf="data.digitalassetsolutions==true">
+                        <div class="col-md-12">
+                            <p>digitalassetsolutions</p>
+                        </div>
+                    </div>
+                    <div class="row" *ngIf="data.custodialservices==true">
+                        <div class="col-md-12">
+                            <p>custodialservices</p>
+                        </div>
+                    </div>
+                    <div class="row" *ngIf="data.assetprotectontrusts==true">
+                        <div class="col-md-12">
+                            <p>assetprotectontrusts</p>
+                        </div>
+                    </div>
+                    <div class="row" *ngIf="data.escrowservices==true">
+                        <div class="col-md-12">
+                            <p>escrowservices</p>
+                        </div>
+                    </div>
+                    <div class="row" *ngIf="data.complianceservices==true">
+                        <div class="col-md-12">
+                            <p>complianceservices</p>
+                        </div>
+                    </div>
+                    <div class="row" *ngIf="data.other==true">
+                        <div class="col-md-12">
+                            <p>other</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 text-right">
+                    <input type="button" value="Update" (click)="updatedata(data)" class="btn btn-primary">
+                    <br>
+                    <br>
+                    <input type="button" value="Delete" (click)="deletedata(data.id)" class="btn btn-danger">
+                </div>
+            </div>
+            <hr>
+            <br>
+        </div>
+
+    </div>
+</div>
