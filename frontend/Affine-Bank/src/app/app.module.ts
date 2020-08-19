@@ -8,6 +8,8 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { ContectComponent } from './contect/contect.component';
 import { HomeAboutUsComponent } from './home-about-us/home-about-us.component';
+import { ContectCurd } from './contect-curd/contect-curd.component';
+import { UpdateData } from './contect-curd/update-data/update-data.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +17,8 @@ import { HomeAboutUsComponent } from './home-about-us/home-about-us.component';
     HomeComponent,
     ContectComponent,
     HomeAboutUsComponent,
+    ContectCurd,
+    UpdateData,
   ],
   imports: [
     BrowserModule,
